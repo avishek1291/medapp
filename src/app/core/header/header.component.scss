@@ -1,0 +1,59 @@
+.wrapper {
+  position: fixed !important;
+  opacity: 0.6;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  -webkit-box-shadow: 0 -2px 6px #333;
+  box-shadow: 0 -2px 6px #333;
+  background-color: #131313;
+  height: 100px;
+  .wrapper-container {
+    display: flex;
+    flex-direction: row;
+    .logo {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+    .srch-box input {
+      width: 600px;
+      height: 60px;
+      margin-left: 70px;
+      margin-right: 120px;
+      margin-top: 2%;
+    }
+    .cart-user {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2%;
+       img{
+        height: 40px;
+        width: 40px;
+    }
+    span{
+        padding: 5px 5px 5px 5px;
+    }
+    .sign-signup {
+        margin-top: 3%;
+        margin-left:   20px;
+        color: #FFFFFF !important;
+        cursor: pointer;
+    }
+ 
+    
+  }
+}
+
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .header-right {
+      float: none;
+    }
+  }
+}
