@@ -4,7 +4,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const homeRoutes: Routes = [
     {
-        path: '', component: LandingPageComponent
+        path: '**', component: LandingPageComponent
     }
 ];
 

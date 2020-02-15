@@ -4,6 +4,10 @@
             <img src="assets/medIcon.png">
         </div>
         <div class="srch-box">
+            <div class="location-ctr">
+           
+            <i class="fa fa-map-marker"></i>
+        </div>
             <input type="text">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
@@ -13,8 +17,11 @@
                 <img src="assets/user.png">
                 
             </span>
-            <div class="sign-signup">
-                <span>login</span>/<span>signup</span>
+            <div class="sign-signup" *ngIf="!isLoggedin">
+                <span routerLink="/login">login</span>/<span>signup</span>
+            </div>
+            <div class="sign-signup" *ngIf="isLoggedin">
+                <span (click)="logout()">logout</span>
             </div>
         </div>
         

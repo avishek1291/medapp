@@ -2,21 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HomeRoutingModule } from './home-routing.module';
-
-import {ToolbarModule} from 'primeng/toolbar';
-
+import { ProductCardsComponent } from './product-cards/product-cards.component';
+import {CarouselModule} from 'primeng/carousel';
 import {ButtonModule} from 'primeng/button';
 
-import {SplitButtonModule} from 'primeng/splitbutton';
+import { HomeComponent } from './home.component';
 @NgModule({
-  declarations: [LandingPageComponent],
+  declarations: [ProductCardsComponent, LandingPageComponent, HomeComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
-    ToolbarModule,
-    ButtonModule,
-    SplitButtonModule
-  ],
-  exports: [LandingPageComponent]
+    HomeRoutingModule,
+    CarouselModule,
+    ButtonModule
+  ]
 })
 export class HomeModule { }

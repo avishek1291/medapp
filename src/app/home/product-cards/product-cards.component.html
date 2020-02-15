@@ -1,0 +1,42 @@
+<!-- <p-carousel [value]="demoProducts">
+    <ng-template let-car pTemplate="item">
+        <div class="p-grid p-align-center">
+            <div *ngFor="let data of demoProducts">
+            <div class="p-col">
+                <p-card>
+                    <p-header>
+                        {{data.heading}}
+                    </p-header>
+                    <img src="{{data.imgUrl}}" style="width:200px;height:150px;">
+                    <p-footer>
+                        <p-button label="Shop Now" styleClass="ui-button-info"></p-button>
+                    </p-footer>
+                </p-card>
+            </div> 
+        </div>
+        
+    </ng-template>
+</p-carousel> -->
+<div class="carousel-ctr">
+<p-carousel [value]="demoProducts" [numVisible]="4" [numScroll]="1" [circular]="false">
+    <p-header>
+        <h3>Shop by category</h3>
+    </p-header>
+    <ng-template let-car pTemplate="item">
+        <div class="car-details">
+            <div class="p-grid">
+                <div class="p-col-12">
+                    <img src="{{car.imgUrl}}" style="height: 183px;"/>
+                </div>
+                <div class="p-col-12 car-data">
+                    <div class="car-title">{{car.heading}}</div>
+
+                    <div class="car-buttons">
+                        <p-button label="Shop Now" styleClass="ui-button-info"></p-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-carousel>
+</div>
